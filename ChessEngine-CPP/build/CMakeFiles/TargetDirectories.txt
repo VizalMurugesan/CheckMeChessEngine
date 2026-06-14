@@ -1,0 +1,3 @@
+C:/Users/vizal/Desktop/Projects/UnFinished/Chess Bot/ChessEngine-CPP/build/CMakeFiles/ChessEngine.dir
+C:/Users/vizal/Desktop/Projects/UnFinished/Chess Bot/ChessEngine-CPP/build/CMakeFiles/edit_cache.dir
+C:/Users/vizal/Desktop/Projects/UnFinished/Chess Bot/ChessEngine-CPP/build/CMakeFiles/rebuild_cache.dir
