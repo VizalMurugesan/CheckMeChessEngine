@@ -1,6 +1,15 @@
 #include "movegen.h"
 #include <algorithm>
 
+#ifdef _MSC_VER
+#include <intrin.h>
+static inline int __builtin_ctzll(unsigned long long x) {
+    unsigned long index;
+    _BitScanForward64(&index, x);
+    return static_cast<int>(index);
+}
+#endif
+
 static constexpr uint64_t FILE_A = 0x0101010101010101ULL;
 static constexpr uint64_t FILE_B = 0x0202020202020202ULL;
 static constexpr uint64_t FILE_G = 0x4040404040404040ULL;
