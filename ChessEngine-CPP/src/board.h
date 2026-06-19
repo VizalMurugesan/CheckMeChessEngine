@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdint>
+#include <string>
 
 enum Color {WHITE = 0, BLACK = 1};
 enum PieceType {PAWN = 0, KNIGHT = 1, BISHOP = 2, ROOK = 3, QUEEN = 4, KING = 5};
@@ -43,5 +44,11 @@ struct Board {
 
     inline uint64_t occupied() const {
         return whitePieces() | blackPieces();
+    }
+
+    std :: string squareName(int sq) const{
+        char file = 'a' + (sq % 8);
+        char rank = '1' + (sq / 8);
+        return std::string(1, file) + std::string(1, rank);
     }
 };
