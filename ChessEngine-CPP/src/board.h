@@ -1,6 +1,7 @@
 #pragma once
 #include <cstdint>
 #include <string>
+#include <cctype>
 
 enum Color {WHITE = 0, BLACK = 1};
 enum PieceType {PAWN = 0, KNIGHT = 1, BISHOP = 2, ROOK = 3, QUEEN = 4, KING = 5};
@@ -15,23 +16,9 @@ struct Board {
     // 5. Game State Clocks (New variables needed for full FEN compliance)
     int halfmoveClock;   // Tracks 50-move draw rule
     int fullmoveNumber;  // Increments after every Black move
+    
     Board(){
-        pieces[WHITE][PAWN]   = 0x000000000000FF00;  // rank 2
-        pieces[WHITE][ROOK]   = 0x0000000000000081;  // a1 and h1
-        pieces[WHITE][KNIGHT] = 0x0000000000000042;  // b1 and g1
-        pieces[WHITE][BISHOP] = 0x0000000000000024;  // c1 and f1
-        pieces[WHITE][QUEEN]  = 0x0000000000000008;  // d1
-        pieces[WHITE][KING]   = 0x0000000000000010;  // e1
-        pieces[BLACK][PAWN]   = 0x00FF000000000000;  // rank 7
-        pieces[BLACK][ROOK]   = 0x8100000000000000;  // a8 and h8
-        pieces[BLACK][KNIGHT] = 0x4200000000000000;  // b8 and g8
-        pieces[BLACK][BISHOP] = 0x2400000000000000;  // c8 and f8
-        pieces[BLACK][QUEEN]  = 0x0800000000000000;  // d8
-        pieces[BLACK][KING]   = 0x1000000000000000;  // e8
-
-        turn = WHITE;
-        castlingRights  = 0x0F;
-        enPassantSquare = -1;
+       reset();
     }
 
     inline uint64_t whitePieces() const {
@@ -59,6 +46,32 @@ struct Board {
         enPassantSquare = -1;
     }
 
+    void reset() {
+        clearTheBoard();
+
+        // White pieces
+        pieces[WHITE][PAWN]   = 0x000000000000FF00;
+        pieces[WHITE][ROOK]   = 0x0000000000000081;
+        pieces[WHITE][KNIGHT] = 0x0000000000000042;
+        pieces[WHITE][BISHOP] = 0x0000000000000024;
+        pieces[WHITE][QUEEN]  = 0x0000000000000008;
+        pieces[WHITE][KING]   = 0x0000000000000010;
+
+        // Black pieces
+        pieces[BLACK][PAWN]   = 0x00FF000000000000;
+        pieces[BLACK][ROOK]   = 0x8100000000000000;
+        pieces[BLACK][KNIGHT] = 0x4200000000000000;
+        pieces[BLACK][BISHOP] = 0x2400000000000000;
+        pieces[BLACK][QUEEN]  = 0x0800000000000000;
+        pieces[BLACK][KING]   = 0x1000000000000000;
+
+        turn = WHITE;
+        castlingRights = 0x0F;
+        enPassantSquare = -1;
+        halfmoveClock = 0;
+        fullmoveNumber = 1;
+    }
+
 //FEN PARSING
     #pragma region 
     void setFromFEN(const std::string& fen){
@@ -75,6 +88,7 @@ struct Board {
 
             if (c >= '0' && c <= '9') {
                 file += (c - '0'); // Converts character '8' to integer 8
+                index++;
             }
 
             else{
@@ -141,8 +155,9 @@ struct Board {
 
     }
 
-    int getPieceName(const char& piece){
+    int getPieceName( char piece){
 
+        piece = std::tolower(static_cast<unsigned char> (piece));
         switch (piece)
         {
         case 'r':
@@ -172,7 +187,6 @@ struct Board {
     
 
     #pragma endregion
-
 
     std :: string squareName(int sq) const{
         char file = 'a' + (sq % 8);
