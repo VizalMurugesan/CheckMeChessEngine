@@ -74,68 +74,68 @@ struct Board {
 
 //FEN PARSING
     #pragma region 
-    void setFromFEN(const std::string& fen){
-
+    
+    void setFromFEN(const std::string& fen) {
         clearTheBoard();
         int rank = 7;
         int file = 0;
         size_t index = 0;
 
-        while (index < fen.length() && fen[index] != ' ')
-        {
-            
+        // --- FIELD 1: PIECE PLACEMENT ---
+        while (index < fen.length() && fen[index] != ' ') {
             char c = fen[index];
 
             if (c >= '0' && c <= '9') {
-                file += (c - '0'); // Converts character '8' to integer 8
+                file += (c - '0');
                 index++;
             }
+            else if (c == '/') {
+                rank--;
+                file = 0;
+                index++;
+            }
+            else {
+                int pieceNameIndex = getPieceName(c);
+                int pieceColorIndex = (c >= 'A' && c <= 'Z') ? WHITE : BLACK;
 
-            else{
-
-                if(c == '/'){
-                    rank--;
-                    file = 0;
+                if (pieceNameIndex >= 0 && rank >= 0 && rank < 8 && file >= 0 && file < 8) {
+                    int pos = rank * 8 + file;
+                    pieces[pieceColorIndex][pieceNameIndex] |= (1ULL << pos);
                 }
 
-                int pieceNameIndex = getPieceName(c);
-                int pieceColorIndex = (c >= 'A' && c <= 'Z') ? 0 : 1;
-                int pos = rank*8 + file;
-
-                pieces[pieceColorIndex][pieceNameIndex]|= (1ULL <<pos);
-
+                file++;
                 index++;
             }
-            
-
         }
 
-        if (index < fen.length()) index++;
+        // Advance to Field 2
+        if (index < fen.length() && fen[index] == ' ') index++;
+
         // --- FIELD 2: ACTIVE COLOR ---
         if (index < fen.length() && fen[index] != ' ') {
             turn = (fen[index] == 'w') ? WHITE : BLACK;
             index++;
         }
 
-        // Advance past space to reach Field 3: Castling Rights
+        // Advance to Field 3
         if (index < fen.length() && fen[index] == ' ') index++;
 
         // --- FIELD 3: CASTLING RIGHTS ---
-        castlingRights = 0; // Clear it out to rebuild it from the string flags
+        castlingRights = 0;
         while (index < fen.length() && fen[index] != ' ') {
             char c = fen[index];
-            if (c == '-') { 
-                index++; 
-                break; 
+            if (c == '-') {
+                index++;
+                break;
             }
-            if (c == 'K') castlingRights |= (1 << 0); // Bit 0: White King-side
-            if (c == 'Q') castlingRights |= (1 << 1); // Bit 1: White Queen-side
-            if (c == 'k') castlingRights |= (1 << 2); // Bit 2: Black King-side
-            if (c == 'q') castlingRights |= (1 << 3); // Bit 3: Black Queen-side
+            if (c == 'K') castlingRights |= (1 << 0);
+            if (c == 'Q') castlingRights |= (1 << 1);
+            if (c == 'k') castlingRights |= (1 << 2);
+            if (c == 'q') castlingRights |= (1 << 3);
             index++;
         }
 
-        // Advance past space to reach Field 4: En Passant Target
+        // Advance to Field 4
         if (index < fen.length() && fen[index] == ' ') index++;
 
         // --- FIELD 4: EN PASSANT TARGET SQUARE ---
@@ -144,15 +144,12 @@ struct Board {
                 enPassantSquare = -1;
                 index++;
             } else if (index + 1 < fen.length()) {
-                // FEN coordinates are text (e.g., "e3"). Convert to 0-63 index.
-                int epFile = fen[index] - 'a';       // 'e' - 'a' = 4
-                int epRank = fen[index + 1] - '1';   // '3' - '1' = 2
-                
-                enPassantSquare = epRank * 8 + epFile; // 2 * 8 + 4 = 20
+                int epFile = fen[index] - 'a';
+                int epRank = fen[index + 1] - '1';
+                enPassantSquare = epRank * 8 + epFile;
                 index += 2;
             }
         }
-
     }
 
     int getPieceName( char piece){
