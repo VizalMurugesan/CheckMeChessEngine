@@ -3,6 +3,7 @@ project(ChessEngine)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Collect all .cpp files in src/
 file(GLOB_RECURSE SOURCES "src/*.cpp")

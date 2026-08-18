@@ -9,7 +9,8 @@ FPS = 120
 
 # Time control
 GAME_TIME_LIMIT = 600.0  
-INCREMENT_SEC = 5.0      
+INCREMENT_SEC = 5.0   
+bot_move_timeout = 100.0  
 
 # Visuals
 LIGHT_SQ = (240, 217, 181) 

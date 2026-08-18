@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 2026-06-16 5:20:57 AM.
+      Build started 2026-08-17 5:58:44 PM.
       
       Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\3.31.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -62,7 +62,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.71
+      Time Elapsed 00:00:02.88
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -88,7 +88,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 2026-06-16 5:20:59 AM.
+      Build started 2026-08-17 5:58:48 PM.
       
       Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\3.31.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -126,7 +126,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.68
+      Time Elapsed 00:00:02.81
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -145,8 +145,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-6yhwu6"
-      binary: "C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-6yhwu6"
+      source: "C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-5qaf9d"
+      binary: "C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-5qaf9d"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -155,49 +155,49 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-6yhwu6'
+        Change Dir: 'C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-5qaf9d'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4dd93.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_891da.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 2026-06-16 5:21:01 AM.
+        Build started 2026-08-17 5:58:52 PM.
         
-        Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6yhwu6\\cmTC_4dd93.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5qaf9d\\cmTC_891da.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_4dd93.dir\\Debug\\".
+          Creating directory "cmTC_891da.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6yhwu6\\Debug\\".
-          Creating directory "cmTC_4dd93.dir\\Debug\\cmTC_4dd93.tlog\\".
+          Creating directory "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5qaf9d\\Debug\\".
+          Creating directory "cmTC_891da.dir\\Debug\\cmTC_891da.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_4dd93.dir\\Debug\\cmTC_4dd93.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_4dd93.dir\\Debug\\cmTC_4dd93.tlog\\unsuccessfulbuild".
+          Creating "cmTC_891da.dir\\Debug\\cmTC_891da.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_891da.dir\\Debug\\cmTC_891da.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4dd93.dir\\Debug\\\\" /Fd"cmTC_4dd93.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_891da.dir\\Debug\\\\" /Fd"cmTC_891da.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4dd93.dir\\Debug\\\\" /Fd"cmTC_4dd93.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_891da.dir\\Debug\\\\" /Fd"cmTC_891da.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6yhwu6\\Debug\\cmTC_4dd93.exe" /INCREMENTAL /ILK:"cmTC_4dd93.dir\\Debug\\cmTC_4dd93.ilk" /NOLOGO /LIBPATH:"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-6yhwu6/Debug/cmTC_4dd93.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-6yhwu6/Debug/cmTC_4dd93.lib" /MACHINE:X64  /machine:x64 cmTC_4dd93.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_4dd93.vcxproj -> C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6yhwu6\\Debug\\cmTC_4dd93.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5qaf9d\\Debug\\cmTC_891da.exe" /INCREMENTAL /ILK:"cmTC_891da.dir\\Debug\\cmTC_891da.ilk" /NOLOGO /LIBPATH:"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-5qaf9d/Debug/cmTC_891da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-5qaf9d/Debug/cmTC_891da.lib" /MACHINE:X64  /machine:x64 cmTC_891da.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_891da.vcxproj -> C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5qaf9d\\Debug\\cmTC_891da.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6yhwu6\\Debug\\cmTC_4dd93.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4dd93.dir\\Debug\\cmTC_4dd93.tlog\\cmTC_4dd93.write.1u.tlog" "cmTC_4dd93.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5qaf9d\\Debug\\cmTC_891da.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_891da.dir\\Debug\\cmTC_891da.tlog\\cmTC_891da.write.1u.tlog" "cmTC_891da.dir\\Debug\\vcpkg.applocal.log"
           'pwsh.exe' is not recognized as an internal or external command,
           operable program or batch file.
-          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6yhwu6\\Debug\\cmTC_4dd93.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4dd93.dir\\Debug\\cmTC_4dd93.tlog\\cmTC_4dd93.write.1u.tlog" "cmTC_4dd93.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
-          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6yhwu6\\Debug\\cmTC_4dd93.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4dd93.dir\\Debug\\cmTC_4dd93.tlog\\cmTC_4dd93.write.1u.tlog" "cmTC_4dd93.dir\\Debug\\vcpkg.applocal.log"
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5qaf9d\\Debug\\cmTC_891da.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_891da.dir\\Debug\\cmTC_891da.tlog\\cmTC_891da.write.1u.tlog" "cmTC_891da.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5qaf9d\\Debug\\cmTC_891da.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_891da.dir\\Debug\\cmTC_891da.tlog\\cmTC_891da.write.1u.tlog" "cmTC_891da.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_4dd93.dir\\Debug\\cmTC_4dd93.tlog\\unsuccessfulbuild".
-          Touching "cmTC_4dd93.dir\\Debug\\cmTC_4dd93.tlog\\cmTC_4dd93.lastbuildstate".
-        Done Building Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6yhwu6\\cmTC_4dd93.vcxproj" (default targets).
+          Deleting file "cmTC_891da.dir\\Debug\\cmTC_891da.tlog\\unsuccessfulbuild".
+          Touching "cmTC_891da.dir\\Debug\\cmTC_891da.tlog\\cmTC_891da.lastbuildstate".
+        Done Building Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5qaf9d\\cmTC_891da.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.80
+        Time Elapsed 00:00:04.03
         
       exitCode: 0
   -
@@ -237,8 +237,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-1t4rox"
-      binary: "C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-1t4rox"
+      source: "C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-hykc3a"
+      binary: "C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-hykc3a"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -248,49 +248,49 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-1t4rox'
+        Change Dir: 'C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-hykc3a'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b694b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_046ec.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 2026-06-16 5:21:04 AM.
+        Build started 2026-08-17 5:58:57 PM.
         
-        Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1t4rox\\cmTC_b694b.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykc3a\\cmTC_046ec.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_b694b.dir\\Debug\\".
+          Creating directory "cmTC_046ec.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1t4rox\\Debug\\".
-          Creating directory "cmTC_b694b.dir\\Debug\\cmTC_b694b.tlog\\".
+          Creating directory "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykc3a\\Debug\\".
+          Creating directory "cmTC_046ec.dir\\Debug\\cmTC_046ec.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_b694b.dir\\Debug\\cmTC_b694b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_b694b.dir\\Debug\\cmTC_b694b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_046ec.dir\\Debug\\cmTC_046ec.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_046ec.dir\\Debug\\cmTC_046ec.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b694b.dir\\Debug\\\\" /Fd"cmTC_b694b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_046ec.dir\\Debug\\\\" /Fd"cmTC_046ec.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b694b.dir\\Debug\\\\" /Fd"cmTC_b694b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_046ec.dir\\Debug\\\\" /Fd"cmTC_046ec.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1t4rox\\Debug\\cmTC_b694b.exe" /INCREMENTAL /ILK:"cmTC_b694b.dir\\Debug\\cmTC_b694b.ilk" /NOLOGO /LIBPATH:"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-1t4rox/Debug/cmTC_b694b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-1t4rox/Debug/cmTC_b694b.lib" /MACHINE:X64  /machine:x64 cmTC_b694b.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_b694b.vcxproj -> C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1t4rox\\Debug\\cmTC_b694b.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykc3a\\Debug\\cmTC_046ec.exe" /INCREMENTAL /ILK:"cmTC_046ec.dir\\Debug\\cmTC_046ec.ilk" /NOLOGO /LIBPATH:"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-hykc3a/Debug/cmTC_046ec.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/vizal/Desktop/Projects/UnFinished/CheckMeChessEngine/ChessEngine-CPP/build/CMakeFiles/CMakeScratch/TryCompile-hykc3a/Debug/cmTC_046ec.lib" /MACHINE:X64  /machine:x64 cmTC_046ec.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_046ec.vcxproj -> C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykc3a\\Debug\\cmTC_046ec.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1t4rox\\Debug\\cmTC_b694b.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_b694b.dir\\Debug\\cmTC_b694b.tlog\\cmTC_b694b.write.1u.tlog" "cmTC_b694b.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykc3a\\Debug\\cmTC_046ec.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_046ec.dir\\Debug\\cmTC_046ec.tlog\\cmTC_046ec.write.1u.tlog" "cmTC_046ec.dir\\Debug\\vcpkg.applocal.log"
           'pwsh.exe' is not recognized as an internal or external command,
           operable program or batch file.
-          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1t4rox\\Debug\\cmTC_b694b.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_b694b.dir\\Debug\\cmTC_b694b.tlog\\cmTC_b694b.write.1u.tlog" "cmTC_b694b.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
-          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1t4rox\\Debug\\cmTC_b694b.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_b694b.dir\\Debug\\cmTC_b694b.tlog\\cmTC_b694b.write.1u.tlog" "cmTC_b694b.dir\\Debug\\vcpkg.applocal.log"
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykc3a\\Debug\\cmTC_046ec.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_046ec.dir\\Debug\\cmTC_046ec.tlog\\cmTC_046ec.write.1u.tlog" "cmTC_046ec.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\vizal\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykc3a\\Debug\\cmTC_046ec.exe" "C:\\Users\\vizal\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_046ec.dir\\Debug\\cmTC_046ec.tlog\\cmTC_046ec.write.1u.tlog" "cmTC_046ec.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_b694b.dir\\Debug\\cmTC_b694b.tlog\\unsuccessfulbuild".
-          Touching "cmTC_b694b.dir\\Debug\\cmTC_b694b.tlog\\cmTC_b694b.lastbuildstate".
-        Done Building Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1t4rox\\cmTC_b694b.vcxproj" (default targets).
+          Deleting file "cmTC_046ec.dir\\Debug\\cmTC_046ec.tlog\\unsuccessfulbuild".
+          Touching "cmTC_046ec.dir\\Debug\\cmTC_046ec.tlog\\cmTC_046ec.lastbuildstate".
+        Done Building Project "C:\\Users\\vizal\\Desktop\\Projects\\UnFinished\\CheckMeChessEngine\\ChessEngine-CPP\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykc3a\\cmTC_046ec.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.68
+        Time Elapsed 00:00:02.93
         
       exitCode: 0
   -

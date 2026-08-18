@@ -3,6 +3,7 @@
 #include <sstream>
 #include "board.h"
 #include "movegen.h"
+#include "search.h"
 
 
 
@@ -54,30 +55,27 @@ int main(){
 
         else if (command == "go")
         {
-            std::vector <Move> moves;
-            gen.generateMoves(board, moves);
+            Move best = search_best_move(board, /*max_depth=*/6);
 
-            if(!moves.empty())
+            if (!best.isNull())
             {
-                const Move& m = moves[0];
-                std::string moveStr = board.squareName(m.getFrom()) + board.squareName(m.getTo());
+                std::string moveStr = board.squareName(best.getFrom()) + board.squareName(best.getTo());
 
-                if (m.getMoveType() == PROMOTION) {
-                    switch (m.getPromoteTo()) {
+                if (best.getMoveType() == PROMOTION) {
+                    switch (best.getPromoteTo()) {
                         case QUEEN:  moveStr += 'q'; break;
                         case ROOK:   moveStr += 'r'; break;
                         case BISHOP: moveStr += 'b'; break;
                         case KNIGHT: moveStr += 'n'; break;
                         default:     moveStr += 'q'; break;
                     }
-                
                 }
 
                 std::cout << "bestmove " << moveStr << std::endl;
-            }    
+            }
             else
             {
-                std::cout << "bestmove none" << std::endl;   
+                std::cout << "bestmove none" << std::endl;
             }
         }
 

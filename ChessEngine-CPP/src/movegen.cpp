@@ -618,4 +618,24 @@ void MoveGenerator::generateEnPassantMoves(const Board& board, std::vector<Move>
                 moves.push_back(Move(fromSq, epSq, PAWN, EN_PASSANT));
         }
     }
+    
+    
+}
+
+// movegen.cpp — the real definitions live here, once, at the bottom:
+void generate_legal_moves(const Board& board, std::vector<Move>& moves) {
+    MoveGenerator gen;
+    gen.generateMoves(board, moves);
+}
+
+void generate_captures(const Board& board, std::vector<Move>& moves) {
+    std::vector<Move> all_moves;
+    MoveGenerator gen;
+    gen.generateMoves(board, all_moves);
+
+    for (const Move& m : all_moves) {
+        if (m.isCapture() || m.isPromotion()) {
+            moves.push_back(m);
+        }
+    }
 }
