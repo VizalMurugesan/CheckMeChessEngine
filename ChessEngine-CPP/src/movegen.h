@@ -7,7 +7,7 @@ class MoveGenerator {
 
     public:
         void generateMoves(const Board& board, std::vector<Move>& moves);
-
+         void generatePseudoLegalMoves(const Board& board, std::vector<Move>& moves);
         // Public so free functions / Board can reuse check detection
         bool isSquareAttacked(const Board& board, int sq, Color attacker) const;
         bool isInCheck(const Board& board, Color side) const;
@@ -41,12 +41,7 @@ class MoveGenerator {
 // Free-function wrappers used by search.h
 // -------------------------------------------------------------------------
 
-// Returns fully legal moves (MoveGenerator::generateMoves already filters
-// out moves that leave your own king in check).
-void generate_legal_moves(const Board& board, std::vector<Move>& moves);
 
-// Returns only captures + promotions, for use in quiescence search.
-void generate_captures(const Board& board, std::vector<Move>& moves);
 
 // ─── Free-function wrappers ────────────────────────────────────────────────
 // movegen.h — should look exactly like this, declarations only:
