@@ -18,6 +18,11 @@ static constexpr uint64_t RANK_1 = 0x00000000000000FFULL;
 static constexpr uint64_t RANK_8 = 0xFF00000000000000ULL;
 
 void MoveGenerator::generateMoves(const Board& board, std::vector<Move>& moves) {
+    generatePseudoLegalMoves(board, moves);
+    filterIllegalMoves(board, moves);
+}
+
+void MoveGenerator::generatePseudoLegalMoves(const Board& board, std::vector<Move>& moves) {
     generatePawnMoves(board, moves);
     generateKnightMoves(board, moves);
     generateBishopMoves(board, moves);
@@ -26,7 +31,7 @@ void MoveGenerator::generateMoves(const Board& board, std::vector<Move>& moves) 
     generateKingMoves(board, moves);
     generateCastlingMoves(board, moves);
     generateEnPassantMoves(board, moves);
-    filterIllegalMoves(board, moves);
+    // No filterIllegalMoves() here — that's the whole point.
 }
 
 
@@ -618,4 +623,26 @@ void MoveGenerator::generateEnPassantMoves(const Board& board, std::vector<Move>
                 moves.push_back(Move(fromSq, epSq, PAWN, EN_PASSANT));
         }
     }
+    
+    
 }
+
+// --- Free-function wrappers used by search.h ---
+void generate_legal_moves(const Board& board, std::vector<Move>& moves) {
+    MoveGenerator gen;
+    gen.generatePseudoLegalMoves(board, moves);
+    // search.h's make_move/unmake_move loop filters illegal moves lazily.
+}
+
+void generate_captures(const Board& board, std::vector<Move>& moves) {
+    std::vector<Move> all_moves;
+    MoveGenerator gen;
+    gen.generatePseudoLegalMoves(board, all_moves);
+
+    for (const Move& m : all_moves) {
+        if (m.isCapture() || m.isPromotion()) {
+            moves.push_back(m);
+        }
+    }
+}
+

@@ -7,6 +7,10 @@ class MoveGenerator {
 
     public:
         void generateMoves(const Board& board, std::vector<Move>& moves);
+         void generatePseudoLegalMoves(const Board& board, std::vector<Move>& moves);
+        // Public so free functions / Board can reuse check detection
+        bool isSquareAttacked(const Board& board, int sq, Color attacker) const;
+        bool isInCheck(const Board& board, Color side) const;
 
     private:
         void generatePawnMoves(const Board& board, std::vector<Move>& moves);
@@ -30,7 +34,16 @@ class MoveGenerator {
         void generateCastlingMoves(const Board& board, std::vector<Move>& moves);
         void generateEnPassantMoves(const Board& board, std::vector<Move>& moves);
 
-        bool isSquareAttacked(const Board& board, int sq, Color attacker) const;
-        bool isInCheck(const Board& board, Color side) const;
         void filterIllegalMoves(const Board& board, std::vector<Move>& moves);
 };
+
+// -------------------------------------------------------------------------
+// Free-function wrappers used by search.h
+// -------------------------------------------------------------------------
+
+
+
+// ─── Free-function wrappers ────────────────────────────────────────────────
+// movegen.h — should look exactly like this, declarations only:
+void generate_legal_moves(const Board& board, std::vector<Move>& moves);
+void generate_captures(const Board& board, std::vector<Move>& moves);

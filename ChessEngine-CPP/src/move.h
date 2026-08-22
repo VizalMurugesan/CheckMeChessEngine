@@ -38,4 +38,25 @@ struct Move{
         return static_cast<PieceType>((data >> 18) & 0x7);
     }
 
+    // 1. Default constructor (needed for uninitialized move variables, root PV, TT entries)
+    constexpr Move() : data(0) {}
+
+    // 2. Convenience boolean checks
+    inline bool isCapture() const {
+        MoveType t = getMoveType();
+        return t == CAPTURE || t == EN_PASSANT;
+    }
+
+    inline bool isPromotion() const {
+        return getMoveType() == PROMOTION;
+    }
+
+    inline bool isNull() const {
+        return data == 0;
+    }
+
+    // 3. Equality operators (needed for comparing best move, transposition tables, tests)
+    inline bool operator==(const Move& other) const { return data == other.data; }
+    inline bool operator!=(const Move& other) const { return data != other.data; }
+
 };

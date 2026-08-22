@@ -5,6 +5,16 @@
 
 enum Color {WHITE = 0, BLACK = 1};
 enum PieceType {PAWN = 0, KNIGHT = 1, BISHOP = 2, ROOK = 3, QUEEN = 4, KING = 5};
+struct Move; 
+struct UndoInfo {
+    int      capturedPieceType   = -1;   // -1 if the move captured nothing
+    int8_t   prevEnPassantSquare = -1;
+    uint8_t  prevCastlingRights  = 0;
+    int      prevHalfmoveClock   = 0;
+    int      prevFullmoveNumber  = 1;
+};
+
+
 
 
 struct Board {
@@ -190,4 +200,38 @@ struct Board {
         char rank = '1' + (sq / 8);
         return std::string(1, file) + std::string(1, rank);
     }
+
+    // --- PIECE QUERY HELPERS ---
+
+    // Returns the PieceType on a square (0-5), or -1 if empty
+    inline int piece_at(int sq) const {
+        uint64_t mask = 1ULL << sq;
+        for (int p = 0; p < 6; ++p) {
+            if ((pieces[WHITE][p] | pieces[BLACK][p]) & mask) {
+                return p;
+            }
+        }
+        return -1; // EMPTY
+    }
+
+      // Make/unmake a move on this board (defined in board.cpp).
+    // make_move returns false (and auto-reverts) if the move leaves your own king in check.
+    bool make_move(const Move& move, UndoInfo& undo);
+    void unmake_move(const Move& move, const UndoInfo& undo);
+    bool is_in_check(Color side) const;
+
+    // Returns the Color on a square, or -1 if empty
+    inline int color_at(int sq) const {
+        uint64_t mask = 1ULL << sq;
+        if (whitePieces() & mask) return WHITE;
+        if (blackPieces() & mask) return BLACK;
+        return -1; // EMPTY
+    }
+
+    // Check if a specific square is occupied by either side
+    inline bool is_occupied(int sq) const {
+        return (occupied() & (1ULL << sq)) != 0;
+    }
+
+    
 };
